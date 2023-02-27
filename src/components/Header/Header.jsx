@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import css from "./Header.module.scss";
-import { BiPhoneCall, BiMenuAltRight } from "react-icons/bi";
+import { BiMenuAltRight } from "react-icons/bi";
+import {AiOutlineWhatsApp} from "react-icons/ai"
 import { motion } from "framer-motion";
 import { getMenuStyles, headerVariants } from "../../utils/motion";
 import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
+import ReactWhatsapp from 'react-whatsapp';
 
 const Header = () => {
   const menuRef = useRef(null);
@@ -38,8 +40,13 @@ const Header = () => {
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#people">Testimonials</a></li>
           <li className={`flexCenter ${css.phone}`}>
-            <p>+91 9821363058</p>
-            <BiPhoneCall size={"40px"} />
+          <ReactWhatsapp style={{backgroundColor: "#f8f7f1", border: 0}} number="+919821363058" message="Hey I am interested and would like to know more.">
+            +91 9821363058
+          </ReactWhatsapp>
+      
+          <ReactWhatsapp style={{backgroundColor: "#f8f7f1", border: 0}} number="+919821363058" message="Hey I am interested and would like to know more.">
+            <AiOutlineWhatsApp size={"40px"} />
+          </ReactWhatsapp>
           </li>
         </ul>
 

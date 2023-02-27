@@ -9,11 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/runtime": "^7.21.0",
     "framer-motion": "^8.0.2",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-slick": "^0.29.0",
+    "react-whatsapp": "^0.3.0",
     "sass": "^1.57.1"
   },
   "devDependencies": {
